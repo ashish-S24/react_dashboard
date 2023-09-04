@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import BasicForm from "./forms/BasicForm";
 import ContactFrom from "./forms/ContactFrom";
-
+import { close, down_arr } from "../assets";
 function Overlay(props) {
   const [clicked, setClicked] = useState(props.clicked);
   const [step, setStep] = useState(1);
@@ -63,7 +63,7 @@ function Overlay(props) {
           <img
             onClick={handleClose}
             className="w-3 h-3 cursor-pointer"
-            src="src/assets/close.png"
+            src={down_arr}
           ></img>
         </div>
         <div className="p-4 px-7 mt-2">

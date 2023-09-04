@@ -15,7 +15,7 @@ function ActivityCard() {
   useEffect(() => {
     axios
       .get(
-        "http://api.openweathermap.org/data/2.5/forecast?lat=20.5937&lon=78.9629&appid=4626c9e9e121bd0737120601a8dc7e06"
+        "http://api.openweathermap.org/data/2.5/forecast?lat=20.5937&lon=78.9629&appid=6c925b196aa56377527fc7aee3df070d"
       )
       .then((response) => {
         const chartData = response.data.list.map((item) => ({
@@ -23,7 +23,7 @@ function ActivityCard() {
           humi: item.main.humidity,
         }));
         setChartData(chartData);
-
+        
         calculateChartData(chartData);
       })
       .catch((error) => {

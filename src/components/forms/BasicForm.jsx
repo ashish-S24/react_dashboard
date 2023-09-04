@@ -1,4 +1,5 @@
 import React from "react";
+import { down_arr } from "../../assets";
 
 function BasicForm({onFormChange}) {
     const handleChange = (e) => {
@@ -32,7 +33,7 @@ function BasicForm({onFormChange}) {
             <div className="absolute w-[24px] h-[24px] right-5 flex items-center  rounded-lg hover:bg-gray-200 transition-all ease-in-out duration-500">
               <img
                 className="w-full h-full"
-                src="src/assets/Right container.png"
+                src={down_arr}
               ></img>
             </div>
           </span>
@@ -50,7 +51,7 @@ function BasicForm({onFormChange}) {
             <div className="absolute w-[24px] h-[24px] right-5 flex items-center  rounded-lg hover:bg-gray-200 transition-all ease-in-out duration-500">
               <img
                 className="w-full h-full"
-                src="src/assets/Right container.png"
+                src={down_arr}
               ></img>
             </div>
           </span>

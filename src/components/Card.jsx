@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
-
+import { whatsapp, instagram, youtube, envelope } from '../assets';
 
 function Card(props) {
     const onClick = () => {
@@ -30,13 +30,13 @@ function Card(props) {
                 <div className="flex flex-col">
                     <span className="flex items-center mt-3 lg:mt-0">
                         <span className="flex justify-center items-center rounded-full w-[28px] h-[28px] bg-vector_bg_1 bg-opacity-20">
-                            <img className="w-[17px] h-[17px]" src="src/assets/svgviewer-output 1.png"></img>
+                            <img className="w-[17px] h-[17px]" src={whatsapp}></img>
                         </span>
                         <p className="sm:text-[12px] text-[12px] font-figtree underline ml-3">+91 {`${data.phone.slice(0,4)}`} {`${data.phone.slice(4)}`} </p>
                     </span>
                     <span className="flex items-center sm:mt-5 mt-2">
                         <span className="flex justify-center items-center rounded-full w-[28px] h-[28px] bg-vector_bg_4 bg-opacity-20">
-                            <img className="w-[15px] h-[12px]" src="src/assets/envelope.png"></img>
+                            <img className="w-[15px] h-[12px]" src={envelope}></img>
                         </span>
                         <p className="sm:text-[12px] text-[12px] font-figtree underline ml-3">{`${data.email}`}</p>
                     </span>  
@@ -44,13 +44,13 @@ function Card(props) {
                 <div className="flex flex-col xl:ml-12 md:ml-12 lg:ml-1 mt-3 sm:ml-7 lg:mt-0"> 
                     <span className="flex items-center">
                         <span className="flex justify-center items-center rounded-full w-[28px] h-[28px] bg-vector_bg_3 bg-opacity-20">
-                            <img className="w-[17px] h-[17px]" src="src/assets/logo-instagram 1.png"></img>
+                            <img className="w-[17px] h-[17px]" src={instagram}></img>
                         </span>
                         <p className={`sm:text-[12px] text-[12px] font-figtree ${data.igLink != "" ? "underline" : "text-slate-500 text-opacity-30"} ml-3`}>{`${data.igLink != "" ? data.igLink : "Not Enter"}`}</p>
                     </span>
                     <span className="flex items-center sm:mt-5 mt-2">
                         <span className="flex justify-center items-center rounded-full w-[28px] h-[28px] bg-vector_bg_3 bg-opacity-20">
-                            <img className="w-[17px] h-[17px]" src="src/assets/logo-twitter 1.png"></img>
+                            <img className="w-[17px] h-[17px]" src={youtube}></img>
                         </span>
                         <p className={`sm:text-[12px] text-[12px] font-figtree ${data.ytLink != "" ? "underline" : "text-slate-500 text-opacity-30"} ml-3`}>{`${data.ytLink != "" ? data.ytLink : "Not Enter"}`}</p>
                     </span>
