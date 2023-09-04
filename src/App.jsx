@@ -56,7 +56,7 @@ function App() {
   return (
     <>
       {(isAuthenticated || validData) ? (
-        <div className="flex sm:p-8 py-4 bg-primary lg:h-[130vh] h-[180vh] ">
+        <div className="flex sm:p-12 py-4 bg-primary lg:h-[130vh] h-[180vh] ">
           <SideBar></SideBar>
           <Dashboard
             onSubmit={handleFormData}

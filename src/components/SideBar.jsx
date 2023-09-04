@@ -25,13 +25,13 @@ function SideBar() {
     //     }
     // ]
   return (
-    <div className="h-full  lg:w-[300px] md:w-[200px] w-20 blue-gradient rounded-[20px] flex flex-col justify-between">
+    <div className="h-full  lg:w-[350px] md:w-[200px] w-20 blue-gradient rounded-[20px] flex flex-col justify-between">
         <div className='flex flex-col justify-start items-center'>
-        <div className='mt-12 flex flex-col items-center'>
+        <div className='mt-14 flex flex-col xl:items-start items-center xl:w-3/5'>
             <h1 className="text-[36px] font-mont font-bold text-white hidden md:block">Board.</h1>
             <h1 className="font-popp font-bold text-white md:hidden block">LOGO</h1>
         </div>
-        <div className='relative mt-4 flex flex-col items-center  xl:w-3/5'>
+        <div className='relative mt-4 flex flex-col items-center  xl:w-3/5 '>
             <ul className='h-[300px] flex flex-col justify-evenly w-full'>
                 <li className='flex flex-row  items-center'>
                     <img className="  h-[24px] w-[24px] md:h-[18px] md:w-[18px]" src={dashboard_icon}></img>

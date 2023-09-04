@@ -24,9 +24,9 @@ function Card(props) {
         </div>
        }
        {props.childDone === true && 
-        <div className="w-full h-full flex flex-col justify-around sm:px-7 py-2 sm:py-0">
+        <div className="w-full h-full flex flex-col xl:justify-around justify-center sm:px-7 py-2 sm:py-0">
             <div><p className="sm:text-[24px] text-[18px] font-figtree font-semibold">{`${data.name}`}</p></div>
-            <div className='flex flex-col sm:flex-row justify-between md:max-lg:justify-normal'>
+            <div className='flex flex-row sm:flex-row md:max-lg:justify-normal lg:mt-12 xl:mt-0 md:mt-5 sm:mt-5'>
                 <div className="flex flex-col">
                     <span className="flex items-center mt-3 lg:mt-0">
                         <span className="flex justify-center items-center rounded-full w-[28px] h-[28px] bg-vector_bg_1 bg-opacity-20">
@@ -41,7 +41,7 @@ function Card(props) {
                         <p className="sm:text-[14px] text-[12px] font-figtree underline ml-3">{`${data.email}`}</p>
                     </span>  
                 </div>
-                <div className="flex flex-col md:ml-12 lg:mr-7 mt-3 sm:ml-7 lg:mt-0"> 
+                <div className="flex flex-col md:ml-12 lg:mr-7  ml-20 mt-3 sm:ml-7 lg:mt-0"> 
                     <span className="flex items-center">
                         <span className="flex justify-center items-center rounded-full w-[28px] h-[28px] bg-vector_bg_3 bg-opacity-20">
                             <img className="w-[17px] h-[17px]" src={instagram}></img>
