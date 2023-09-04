@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { ringc_hart } from '../assets';
 function ProductCard() {
   return (
     <div className="lg:col-span-1 col-span-2  bg-white flex flex-col justify-evenly w-full h-full p-6 py-3 rounded-3xl shadow-lg border-[2px] border-gray-200">
@@ -9,7 +9,7 @@ function ProductCard() {
         </div>
         <div className="flex flex-col sm:flex-row lg:justify-start  xl:justify-center justify-around sm:px-4">
             <div className="flex items-center justify-center md:justify-normal">
-                <img className='md:w-[150px] md:h-[150px] w-[120px] h-[120px]' src='src/assets/Group 7540.png'></img>
+                <img className='md:w-[150px] md:h-[150px] w-[120px] h-[120px]' src={ringc_hart}></img>
             </div>
             <div className="grid grid-cols-4 sm:gap-4 lg:ml-16 mt-3 sm:mt-[0]">
                 <span className="flex-col col-span-2 sm:col-span-4">

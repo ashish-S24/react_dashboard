@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { User, useAuth0 } from "@auth0/auth0-react";
+import { notify, profile, bols_search, search_icon } from "../assets";
 
 function Header() {
   const { logout } = useAuth0();
@@ -21,19 +22,19 @@ function Header() {
           ></input>
           <img
             className="absolute  ml-[120px] h-[12px] w-[12px]"
-            src="src/assets/Search icon.png"
+            src={search_icon}
           ></img>
         </div>
         <div className="sm:hidden">
         <img
             className="h-[20px] w-[20px]"
-            src="src/assets/bols_search.png"
+            src={bols_search}
           ></img>
         </div>
         <div className="relative">
           <img
             className="h-[20px] w-[18px]"
-            src="src/assets/Vector (1).png"
+            src={notify}
           ></img>
         </div>
         <div
@@ -42,7 +43,7 @@ function Header() {
         >
           <img
             className="h-[30px] w-[30px]"
-            src="src/assets/Mask Group.png"
+            src={profile}
           ></img>
           <span
             className={`absolute flex justify-center items-center ${

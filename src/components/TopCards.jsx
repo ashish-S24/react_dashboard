@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { trans, transaction_icon, like, guests } from '../assets';
 
 function TopCards() {
   return (
@@ -7,7 +8,7 @@ function TopCards() {
             <div className='flex flex-col'>
                 <div className=''>
                     <div className="rounded-full bg-vector_bg_1 sm:w-[38px] sm:h-[38px] w-[28px] h-[28px] flex justify-center items-center">
-                        <img className='h-[16px] w-[16px] sm:h-[21px] sm:w-[21px]' src='src/assets/Vector (2).png'></img>
+                        <img className='h-[16px] w-[16px] sm:h-[21px] sm:w-[21px]' src={trans}></img>
                     </div>
                 </div>
                 <div className='mt-1'>
@@ -24,7 +25,7 @@ function TopCards() {
             <div className='flex flex-col'>
                 <div className=''>
                     <div className="rounded-full bg-vector_bg_2 sm:w-[38px] sm:h-[38px] w-[28px] h-[28px] flex justify-center items-center">
-                        <img className='h-[16px] w-[16px] sm:h-[21px] sm:w-[21px]' src='src/assets/transaction_icon.png'></img>
+                        <img className='h-[16px] w-[16px] sm:h-[21px] sm:w-[21px]' src={transaction_icon}></img>
                     </div>
                 </div>
                 <div className='mt-1'>
@@ -41,7 +42,7 @@ function TopCards() {
             <div className='flex flex-col'>
                 <div className=''>
                     <div className="rounded-full bg-vector_bg_3 sm:w-[38px] sm:h-[38px] w-[28px] h-[28px] flex justify-center items-center">
-                        <img className='h-[16px] w-[16px] sm:h-[21px] sm:w-[21px]' src='src/assets/Vector (3).png'></img>
+                        <img className='h-[16px] w-[16px] sm:h-[21px] sm:w-[21px]' src={like}></img>
                     </div>
                 </div>
                 <div className='mt-1'>
@@ -58,7 +59,7 @@ function TopCards() {
             <div className='flex flex-col'>
                 <div className=''>
                     <div className="rounded-full bg-vector_bg_4 sm:w-[38px] sm:h-[38px] w-[28px] h-[28px] flex justify-center items-center">
-                        <img className='h-[14px] w-[16px] sm:h-[18px] sm:w-[21px]' src='src/assets/Vector (4).png'></img>
+                        <img className='h-[14px] w-[16px] sm:h-[18px] sm:w-[21px]' src={guests}></img>
                     </div>
                 </div>
                 <div className='mt-1'>

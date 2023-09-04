@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+
 
 function Card(props) {
     const onClick = () => {
