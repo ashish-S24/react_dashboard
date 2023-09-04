@@ -1,8 +1,10 @@
 // weatherApi.js
+const API_KEY = "4626c9e9e121bd0737120601a8dc7e06"
+const BASE_URL = "https://api.openweathermap.org/data/2.5"
 
 export  async function fetChartData() {
     const apiUrl =
-      "http://api.openweathermap.org/data/2.5/forecast?lat=20.5937&lon=78.9629&appid=6c925b196aa56377527fc7aee3df070d";
+      "https://dummyjson.com/products";
   
     try {
       const response = await fetch(apiUrl);
@@ -11,14 +13,16 @@ export  async function fetChartData() {
       }
   
       const data = await response.json();
-      const chartData = data.list.map((item) => ({
-        tempt: item.main.temp,
-        humi: item.main.humidity,
+      const chartData = data.products.map((item) => ({
+        tempt: item.price,
+        humi: item.stock,
       }));
       return chartData;
     } catch (error) {
       console.error("Error fetching data:", error);
       throw error;
     }
-  }
+}
+
+fetChartData();
   

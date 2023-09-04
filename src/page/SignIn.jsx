@@ -14,15 +14,11 @@ function SignIn(props) {
     const handleEmil = (e) => {
         const email = e.target;
         setEmail(email.value);
-        console.log(email);
-        
     };
 
     const handlPassword = (e) => {
         const pass = e.target;
-        setPassword(pass.value);
-        console.log(email);
-        
+        setPassword(pass.value);  
     };
 
     const handleLogin = () => {
