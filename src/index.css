@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Lato:wght@100;300;400&family=Miniver&family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@700&family=Poppins:wght@100;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.blue-gradient {
+  background: linear-gradient(180deg, #4285F4 0%, #3C83F9 100%);
+}
