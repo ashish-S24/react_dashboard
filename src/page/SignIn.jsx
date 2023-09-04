@@ -41,9 +41,9 @@ function SignIn(props) {
             <div className="w-full flex justify-center"><p className="text-[60px] font-mont font-bold text-white">Board.</p></div>
             <div className="w-full mb-[40px] flex justify-center">
                 <div className="flex lg:gap-8 gap-3 items-center">
-                    <img className="md:w-[34px] w-[24px] md:h-[34px] h-[24p] cursor-pointer" src="src/assets/github_icon.png"></img>  
-                    <img className="md:w-[34px] w-[24px] md:h-[34px] h-[24p] cursor-pointer" src="src/assets/twitter_icon.png"></img>  
-                    <img className="md:w-[34px] w-[24px] md:h-[34px] h-[24p] cursor-pointer" src="src/assets/linkdin_icon.png"></img>  
+                    <img className="md:w-[34px] w-[24px] md:h-[34px] h-[24p] cursor-pointer" src="/assets/github_icon.png"></img>  
+                    <img className="md:w-[34px] w-[24px] md:h-[34px] h-[24p] cursor-pointer" src="/assets/twitter_icon.png"></img>  
+                    <img className="md:w-[34px] w-[24px] md:h-[34px] h-[24p] cursor-pointer" src="/assets/linkdin_icon.png"></img>  
                     <img className="md:w-[44px] w-[34px] cursor-pointer" src="src/assets/carbon_logo-discord.png"></img>  
                 </div>
             </div>
@@ -66,11 +66,11 @@ function SignIn(props) {
             </div>
             <div className="flex w-full sm:justify-between gap-4">
               <span onClick={() => loginWithRedirect()} className="flex items-center justify-center rounded-[10px] bg-white sm:px-4 w-1/2 py-2 text-[12px] cursor-pointer">
-                <img className="sm:w-4 sm:h-4 w-6 h-6" src="src/assets/google-icon 1.png"></img>
+                <img className="sm:w-4 sm:h-4 w-6 h-6" src="/assets/google-icon 1.png"></img>
                 <p className="ml-3 hidden sm:flex font-mont text-black text-opacity-50 text-center">Sign in with Google</p>
              </span>
              <span className="flex items-center justify-center rounded-[10px] bg-white sm:px-4 w-1/2 py-2 text-[12px] cursor-pointer">
-                <img className="sm:w-4 sm:h-4 w-5 h-6" src="src/assets/apple 1.png"></img>
+                <img className="sm:w-4 sm:h-4 w-5 h-6" src="/assets/apple 1.png"></img>
                 <p className="ml-3 hidden sm:flex font-mont text-black text-opacity-50 text-center">Sign in with Apple</p>
              </span>
             </div>
