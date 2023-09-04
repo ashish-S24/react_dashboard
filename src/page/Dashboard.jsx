@@ -34,7 +34,7 @@ function Dashboard(props) {
           <div className="lg:xl:h-[45vh] grid row-span-1">
             <ActivityCard></ActivityCard>
           </div>
-          <div className="lg:xl:h-[35vh] grid row-span-1">
+          <div className="lg:xl:h-[33vh] grid row-span-1">
             <div className="grid lg:grid-cols-2 gap-4 lg:gap-12 h-full">
               <ProductCard></ProductCard>
               <Card
