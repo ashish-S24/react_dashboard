@@ -2,6 +2,7 @@
 /* eslint-disable no-undef */
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import {fetChartData} from "../services/server";
 
 function ActivityCard() {
   const [chartData, setChartData] = useState([]);
@@ -13,22 +14,31 @@ function ActivityCard() {
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 700);
 
   useEffect(() => {
-    axios
-      .get(
-        "http://api.openweathermap.org/data/2.5/forecast?lat=20.5937&lon=78.9629&appid=6c925b196aa56377527fc7aee3df070d"
-      )
-      .then((response) => {
-        const chartData = response.data.list.map((item) => ({
-          tempt: item.main.temp,
-          humi: item.main.humidity,
-        }));
-        setChartData(chartData);
+
+     fetChartData()
+     .then((chartData) => {
+      setChartData(chartData);
+      calculateChartData(chartData);
+     })
+     .catch((error) =>{
+      console.log("Error in WeatherComponent:", error);
+     });
+    // axios
+    //   .get(
+    //     "http://api.openweathermap.org/data/2.5/forecast?lat=20.5937&lon=78.9629&appid=6c925b196aa56377527fc7aee3df070d"
+    //   )
+    //   .then((response) => {
+    //     const chartData = response.data.list.map((item) => ({
+    //       tempt: item.main.temp,
+    //       humi: item.main.humidity,
+    //     }));
+    //     setChartData(chartData);
         
-        calculateChartData(chartData);
-      })
-      .catch((error) => {
-        console.log("Error fetching Data:", error);
-      });
+    //     calculateChartData(chartData);
+    //   })
+    //   .catch((error) => {
+    //     console.log("Error fetching Data:", error);
+    //   });
   }, []);
 
   useEffect(() => {
